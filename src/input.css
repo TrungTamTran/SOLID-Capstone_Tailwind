@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-header {
+    @apply text-gray1 hover:text-blue-700 font-thin1 
+}

@@ -3,6 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
+      fontWeight:{
+        thin1: 400,
+
+      },
+      colors:{
+        gray1: "#757693"
+      },
       maxWidth: {
         "c-1390": "1390px", // Thiết lập max-w-c-1390 là 1390px
       },
