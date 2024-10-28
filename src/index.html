@@ -1,218 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solid</title>
-    <!-- FAVICON -->
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
-    <!-- FONT GOOGLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solid</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./output.css" />
-  </head>
+  <!-- FONT GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
 
-  <body>
-    <header class="fixed py-7 w-full mx-0 z-999">
-      <div
-        class="relative mx-auto max-w-c-1390 justify-between items-center px-4 md:px-8 xl-flex 2xl:px-0"
-      >
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-        >
-          <a href="#" class="flex items-stretch space-x-3 rtl:space-x-reverse">
-            <img
-              src="../img/logo-light.png"
-              style="width: 120px; height: 30px"
-              class="h-8"
-              alt="solidlogo"
-            />
-          </a>
-          <button
-            data-collapse-toggle="navbar-dropdown"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-dropdown"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div class="hidden w-full xl:block xl:w-auto" id="navbar-dropdown">
-            <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block text-gray1 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block text-header">Features</a>
-              </li>
-              <li>
-                <a href="#" class="block text-header">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="block text-header">Docs</a>
-              </li>
-              <li class="hover:block">
-                <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full text-header"
-                >
-                  Pages
-                  <svg
-                    class="w-2.5 h-2.5 ms-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal border-solid-1">
-                  <ul
-                    class="py-2 text-sm text-gray1 dark:text-gray1"
-                    aria-labelledby="dropdownLargeButton"
-                  >
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-header"
-                        >Blog Grid</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-header"
-                        >Sign In</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 text-header"
-                        >Sign Out</a
-                      >
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-header"
-                      >Docs</a
-                    >
-                  </div>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-header"
-                      >Support</a
-                    >
-                  </div>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-header"
-                      >404</a
-                    >
-                  </div>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body>
+  <header class="fixed py-7 w-full mx-0 z-999">
+    <div class="relative mx-auto max-w-c-1390 justify-between items-center px-4 md:px-8 xl-flex 2xl:px-0">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-stretch space-x-3 rtl:space-x-reverse">
+          <img src="../img/logo-light.png" style="width: 120px; height: 30px" class="h-8" alt="solidlogo" />
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full xl:block xl:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block text-gray1 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block text-header">Features</a>
+            </li>
+            <li>
+              <a href="#" class="block text-header">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="block text-header">Docs</a>
+            </li>
+            <li class="hover:block">
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full text-header">
+                Pages
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal border-solid-1">
+                <ul class="py-2 text-sm text-gray1 dark:text-gray1" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-header">Blog Grid</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-header">Sign In</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-header">Sign Out</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-header">Docs</a>
                 </div>
-              </li>
-              <li>
-                <a href="#" class="block text-header">Support</a>
-              </li>
-            </ul>
-          </div>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-header">Support</a>
+                </div>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-header">404</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="block text-header">Support</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <h1>thay đỏi header</h1>
-    </header>
+    </div>
+    <h1>thay đỏi header</h1>
+  </header>
 
-    <main>
-      <!-- CAROUSEL -->
+  <main>
+    <!-- CAROUSEL -->
+    <section class="Carousel overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+      <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 flex lg:items-center lg:gap-8 xl:gap-32.5">
+        <div class=" md:w-1/2 p-5">
+          <h4 class="mb-4.5 text-lg font-medium text-black">🔥 Solid - A Complete SaaS Starter Template
+            for SaaS
+          </h4>
+          <h1 class="mb-5 pr-16 text-3xl font-bold text-black xl:text-hero ">Robust SaaS Boilerplate and
+            Starter
+            for<span
+              class="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">Next.js</span>
+          </h1>
+          <p class=" text-gray1">Packed with all the key integrations you need for swift SaaS startup launch,
+            including -
+            Authentication,
+            Database,
+            Sanity Blog, Essential UI Components, Business Pages and More. Built-winth - Next.js, React 18 and
+            TypeScript.</p>
+          <div class="mt-10"><a aria-label="get started button"
+              class="inline-block rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-btn dark:hover:bg-blackho"
+              href="/auth/signup">Get Started</a></div>
+        </div>
+        <div class="animate_right hidden md:w-1/2 lg:block">
+          <div class="relative 2xl:-mr-7.5">
+            <img alt="shape" loading="lazy" width="46" height="246" decoding="async" data-nimg="1"
+              class="absolute -left-11.5 top-0" style="color:transparent" src="../img/shape-01.png">
+            <img alt="shape" loading="lazy" width="36.9" height="36.7" decoding="async" data-nimg="1"
+              class="absolute bottom-0 right-0 z-10" style="color:transparent" src="../img/shape-02.png">
+            <img alt="shape" loading="lazy" width="21.64" height="21.66" decoding="async" data-nimg="1"
+              class="absolute -right-6.5 bottom-0 z-1" style="color:transparent" src="../img/shape-06.png">
+            <div class=" relative aspect-[700/444] w-full">
+              <img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" class="shadow-solid-l dark:hidden"
+                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                src="../img/carousel-light.png">
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- END CAROUSEL -->
 
-      <!-- END CAROUSEL -->
+    <!-- Brand -->
+    <section class="Brand"></section>
+    <!-- END Brand -->
 
-      <!-- Brand -->
-      <section class="Brand"></section>
-      <!-- END Brand -->
+    <!-- Features -->
+    <section class="Features"></section>
+    <!-- END Features -->
 
-      <!-- Features -->
-      <section class="Features"></section>
-      <!-- END Features -->
+    <!-- Complete -->
+    <section class="Complete"></section>
+    <!-- END Complete -->
 
-      <!-- Complete -->
-      <section class="Complete"></section>
-      <!-- END Complete -->
+    <!-- Packed -->
+    <section class="Packed"></section>
+    <!-- END Packed -->
 
-      <!-- Packed -->
-      <section class="Packed"></section>
-      <!-- END Packed -->
+    <!-- Intro -->
+    <section class="Intro"></section>
+    <!-- END Intro -->
 
-      <!-- Intro -->
-      <section class="Intro"></section>
-      <!-- END Intro -->
+    <!-- Trust -->
+    <section class="Trust"></section>
+    <!-- END Trust -->
 
-      <!-- Trust -->
-      <section class="Trust"></section>
-      <!-- END Trust -->
+    <!-- Integtaion -->
+    <section class="Integtaion"></section>
+    <!-- END Integtaion -->
 
-      <!-- Integtaion -->
-      <section class="Integtaion"></section>
-      <!-- END Integtaion -->
+    <!-- Enjoy -->
+    <section class="Enjoy"></section>
+    <!-- END Enjoy -->
 
-      <!-- Enjoy -->
-      <section class="Enjoy"></section>
-      <!-- END Enjoy -->
+    <!-- Question -->
+    <section class="Question"></section>
+    <!-- END Question -->
 
-      <!-- Question -->
-      <section class="Question"></section>
-      <!-- END Question -->
+    <!-- Feedback -->
+    <section class="Feedback"></section>
+    <!-- END Feedback -->
 
-      <!-- Feedback -->
-      <section class="Feedback"></section>
-      <!-- END Feedback -->
+    <!-- Plan -->
+    <section class="Plan"></section>
+    <!-- END Plan -->
 
-      <!-- Plan -->
-      <section class="Plan"></section>
-      <!-- END Plan -->
+    <!-- Support -->
+    <section class="Support"></section>
+    <!-- END Support -->
 
-      <!-- Support -->
-      <section class="Support"></section>
-      <!-- END Support -->
+    <!-- Blog -->
+    <section class="Blog"></section>
+    <!-- END Blog -->
+  </main>
 
-      <!-- Blog -->
-      <section class="Blog"></section>
-      <!-- END Blog -->
-    </main>
+  <footer></footer>
 
-    <footer></footer>
+  <!-- FLOWBITE -->
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
 
-    <!-- FLOWBITE -->
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-  </body>
 </html>
