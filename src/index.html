@@ -18,21 +18,23 @@
 </head>
 
 <body>
-  <header class="fixed py-7 w-full mx-0 z-999">
+  <header class="fixed left-0 top-0 z-999 w-full py-7 bg-white shadow transiton duration-100 dark:bg-black">
     <div class="relative mx-auto max-w-c-1390 justify-between items-center px-4 md:px-8 xl-flex 2xl:px-0">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-stretch space-x-3 rtl:space-x-reverse">
-          <img src="../img/logo-light.png" style="width: 120px; height: 30px" class="h-8" alt="solidlogo" />
-        </a>
-        <button data-collapse-toggle="navbar-dropdown" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-dropdown" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
+      <div class="flex w-full items-center justify-between xl:w-1/4">
+       
+          <a href="#" class="flex items-stretch space-x-3 rtl:space-x-reverse">
+            <img src="../img/logo-light.png" style="width: 120px; height: 30px" class="h-8" alt="solidlogo" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
         <div class="hidden w-full xl:block xl:w-auto" id="navbar-dropdown">
           <ul
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -91,9 +93,11 @@
         </div>
       </div>
     </div>
-    <h1>thay đỏi header</h1>
   </header>
-
+  <div class="z-[99999]">
+    <div style="position:fixed; z-index:9999; top:16px; left:16px; right:16px; bottom: 16px; pointer-events: none;">
+    </div>
+  </div>
   <main>
     <!-- CAROUSEL -->
     <section class="Carousel overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
@@ -136,7 +140,44 @@
     <!-- END CAROUSEL -->
 
     <!-- Brand -->
-    <section class="Brand"></section>
+    <section
+      class="boder border-x-0 border-y-stroke bg-alabaster py-11  bg-gray1dark:border-y-strokedark dark:bg-black">
+      <div class="mx-auto max-w-c-1390 px-4 mx:px-8 2xl:px-0">
+        <div class="grid gird-cols-3 items-center justify-center gap-7.5 md:grid-cols-6 lg-gap-12.5 xl-gap-29">
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-01.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-02.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 60%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-03.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-04.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-05.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-06.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+        </div>
+      </div>
+
+    </section>
     <!-- END Brand -->
 
     <!-- Features -->
