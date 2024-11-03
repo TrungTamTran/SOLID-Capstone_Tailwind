@@ -49,6 +49,7 @@ module.exports = {
         'sectiontitle4': ['34px', { lineHeight: '48px', }],
         'sectiontitle2': ['40px', { lineHeight: '52px', }],
         'metatitle3': ['18px', { lineHeight: '26px', }],
+        'itemtitle2': ['24px', { lineHeight: '32px', }],
       },
       inset: {
         '11.5': '2.875rem', // Tạo lớp left-11.5 với giá trị 2.875rem
@@ -68,7 +69,9 @@ module.exports = {
       boxShadow: {
         'solid-3': '0 0 3px rgba(0, 0, 0, 0.1)',
         'solid-4': '0px 6px 90px rgba(186, 186, 186, 0.5)', 
-        'solid-8': '0px 12px 120px rgba(45,74,170,.06)'
+        'solid-8': '0px 12px 120px rgba(45,74,170,.06)',
+        'solid-10': 'var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)',
+        'solid-11': 'var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)', 
       },
       inset: {
         '-25': '-6.25rem', // Giá trị tương ứng với -100px
