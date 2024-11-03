@@ -1155,9 +1155,8 @@ input:checked + .toggle-bg {
   z-index: 50;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
+.z-\[99999\] {
+  z-index: 99999;
 }
 
 .mx-auto {
@@ -1329,16 +1328,16 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
+.w-\[98px\] {
+  width: 98px;
+}
+
 .w-full {
   width: 100%;
 }
 
 .max-w-c-1390 {
   max-width: 1390px;
-}
-
-.max-w-screen-xl {
-  max-width: 1280px;
 }
 
 .flex-1 {
@@ -1417,10 +1416,6 @@ input:checked + .toggle-bg {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1525,6 +1520,11 @@ input:checked + .toggle-bg {
 
 .border-0 {
   border-width: 0px;
+}
+
+.border-x-0 {
+  border-left-width: 0px;
+  border-right-width: 0px;
 }
 
 .border-blue-600 {
@@ -1692,9 +1692,10 @@ input:checked + .toggle-bg {
   padding-bottom: 0.375rem;
 }
 
-.py-12\.5 {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
 }
 
 .py-2 {
@@ -1852,6 +1853,10 @@ input:checked + .toggle-bg {
   opacity: 1;
 }
 
+.opacity-65 {
+  opacity: 0.65;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1907,6 +1912,10 @@ input:checked + .toggle-bg {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
 }
 
 .duration-300 {
@@ -2012,12 +2021,8 @@ input:checked + .toggle-bg {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.hover\:text-primary:hover {
-  color: rgba(0, 107, 255, 1);
-}
-
-.hover\:opacity-90:hover {
-  opacity: 0.9;
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:shadow-solid-4:hover {
@@ -2083,6 +2088,11 @@ input:checked + .toggle-bg {
 .dark\:\!bg-gray-700:is(.dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity)) !important;
+}
+
+.dark\:bg-black:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-blue-600:is(.dark *) {
@@ -2221,6 +2231,10 @@ input:checked + .toggle-bg {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2392,6 +2406,10 @@ input:checked + .toggle-bg {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-1\/4 {
+    width: 25%;
   }
 
   .xl\:w-\[46\%\] {

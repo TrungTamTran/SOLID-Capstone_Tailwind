@@ -18,11 +18,11 @@
 </head>
 
 <body>
-  <header class="fixed py-7 w-full mx-0 z-999">
-    <div class="relative mx-auto max-w-c-1390 justify-between items-center px-4 md:px-8 xl-flex 2xl:px-0">
+  <header class=" container max-w-c-1390 fixed py-7 w-full mx-0 z-999 opacity-2">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-stretch space-x-3 rtl:space-x-reverse">
-          <img src="../img/logo-light.png" style="width: 120px; height: 30px" class="h-8" alt="solidlogo" />
+        <a href="#" class="flex items-center px-10 space-x-3 rtl:space-x-reverse">
+          <img src="../img/logo-light.png" class="h-8 w-8 mx-10" alt="Flowbite Logo" />
         </a>
         <button data-collapse-toggle="navbar-dropdown" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -33,67 +33,103 @@
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <div class="hidden w-full xl:block xl:w-auto" id="navbar-dropdown">
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#"
-                class="block text-gray1 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block text-header">Features</a>
-            </li>
-            <li>
-              <a href="#" class="block text-header">Blog</a>
-            </li>
-            <li>
-              <a href="#" class="block text-header">Docs</a>
-            </li>
-            <li class="hover:block">
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full text-header">
-                Pages
-                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 4 4 4-4" />
+        <div class="flex w-full xl:block xl:w-auto" id="navbar-dropdown">
+          <div>
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#"
+                  class="block text-header bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block text-header md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:bg-transparent">Features</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block text-header md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:bg-transparent">Blog</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block text-header md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:bg-transparent">Docs</a>
+              </li>
+
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full text-header ">Pages
+                  <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="opacity-10 z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-header">Blok Grids</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-header"">Sign In</a>
+                    </li>
+                    <li>
+                      <a href=" #" class="block px-4 py-2 text-header">Sign Up</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-header">Docs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-header">Support</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-header">404</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+
+              <li>
+                <a href="#"
+                  class="block text-header md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:bg-transparent">Support</a>
+              </li>
+
+              <li>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
                 </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div id="dropdownNavbar" class="z-10 hidden font-normal border-solid-1">
-                <ul class="py-2 text-sm text-gray1 dark:text-gray1" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-header">Blog Grid</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-header">Sign In</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-header">Sign Out</a>
-                  </li>
-                </ul>
-                <div class="py-1">
-                  <a href="#" class="block px-4 py-2 text-sm text-header">Docs</a>
-                </div>
-                <div class="py-1">
-                  <a href="#" class="block px-4 py-2 text-sm text-header">Support</a>
-                </div>
-                <div class="py-1">
-                  <a href="#" class="block px-4 py-2 text-sm text-header">404</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="block text-header">Support</a>
-            </li>
-          </ul>
+              </li>
+              <li><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z" />
+                </svg>
+              </li>
+              <li>
+                <button type="button"
+                  class=" bg-white focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-header  dark:bg-gray-800 dark:text-white  dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sign
+                  In</button>
+              </li>
+              <li>
+                <button type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign
+                  Up</button>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
-    </div>
-    <h1>thay đỏi header</h1>
-  </header>
+    </nav>
 
+  </header>
+  <div class="z-[99999]">
+    <div style="position:fixed; z-index:9999; top:16px; left:16px; right:16px; bottom: 16px; pointer-events: none;">
+    </div>
+  </div>
   <main>
     <!-- CAROUSEL -->
     <!-- TRẦN TRUNG TÂM -->
@@ -138,7 +174,43 @@
     <!-- END CAROUSEL -->
 
     <!-- Brand -->
-    <section class="Brand"></section>
+    <section class="boder border-x-gray1 border-y-stroke bg-alabaster py-11 bg-gray-400 bg-gray-#9CA3AF">
+      <div class="mx-auto max-w-c-1390 px-4 mx:px-8 2xl:px-0">
+        <div class="grid gird-cols-3 items-center justify-center gap-7.5 md:grid-cols-6 lg-gap-12.5 xl-gap-29">
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-01.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-02.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 60%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-03.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-04.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-05.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+          <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+            <img alt="Client" loading="lazy" decoding="async" data-nimg="fill" src="../img/brand-06.png"
+              class="opacity-65 transition-all hover:opacity-100 dark:hidden duration-300"
+              style=" position: absolute; width: 100%; height: 80%; inset: 0px; color: transparent; " alt="">
+          </a>
+        </div>
+      </div>
+
+    </section>
     <!-- END Brand -->
 
     <!-- Features -->
@@ -182,81 +254,60 @@
           <div
             class="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4"
             style="opacity: 1; transform: none;">
-            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
-              <img alt="title" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                style="color:transparent" src="../img/icon-02.png">
-            </div>
 
-            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-              High-quality Design
-            </h3>
+            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary"><img alt="title"
+                loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent"
+                src="../img/icon-02.png"></div>
+            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">High-quality
+              Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
 
-            <p style="font-size: 21px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.
-            </p>
           </div>
 
           <div
             class="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4"
             style="opacity: 1; transform: none;">
-            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
-              <img alt="title" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                style="color:transparent" src="../img/icon-03.png">
-            </div>
 
-            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-              Next.js + TypeScript
-            </h3>
-
-            <p style="font-size: 21px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.
-            </p>
+            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary"><img alt="title"
+                loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent"
+                src="/img/icon/icon-03.svg"></div>
+            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">Next.js +
+              TypeScript</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <div
             class="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4"
             style="opacity: 1; transform: none;">
-            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
-              <img alt="title" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                style="color:transparent" src="../img/icon-04.png">
-            </div>
-
-            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-              Sanity Blog and Docs
-            </h3>
-
-            <p style="font-size: 21px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.
-            </p>
+            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary"><img alt="title"
+                loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent"
+                src="/img/icon/icon-04.svg"></div>
+            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">Sanity Blog and
+              Docs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <div
             class="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4"
             style="opacity: 1; transform: none;">
-            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
-              <img alt="title" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                style="color:transparent" src="../img/icon-05.png">
-            </div>
-
-            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-              DB, Auth and Stripe
-            </h3>
-
-            <p style="font-size: 21px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.
-            </p>
+            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary"><img alt="title"
+                loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent"
+                src="/img/icon/icon-05.svg"></div>
+            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">DB, Auth and
+              Stripe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <div
             class="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4"
             style="opacity: 1; transform: none;">
-            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
-              <img alt="title" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                style="color:transparent" src="../img/icon-06.png">
-            </div>
 
-            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-              Regular Free Updates
-            </h3>
-
-            <p style="font-size: 21px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.
-            </p>
+            <div class="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary"><img alt="title"
+                loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent"
+                src="/img/icon/icon-06.svg"></div>
+            <h3 class="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">Regular Free
+              Updates</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
         </div>
 
@@ -265,7 +316,53 @@
     <!-- END Features -->
 
     <!-- Complete -->
-    <section class="Complete"></section>
+    <section class="container mx-auto overflow-hidden pb-20 lg:pb-25 xl:pb-30">
+      <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+        <div class="flex items-center gap-8 lg:gap-32.5">
+          <div class=" md:w-1/2" style="opacity:1;transform: none;">
+            <img alt="title" loading="lazy" width="500" height="500" decoding="async" data-nimg="1"
+              src="../img/about-01.png">
+          </div>
+          <div class="md:w-1/2">
+            <h4 class="font-medium uppercase text-black ">
+              <span
+                class="mb-4 mr-4 rounded-full border-black px-4.5 py-1.5 text-xs font-semibold uppercase text-black">New</span>
+              <!-- -->
+              SaaS Boilerplate for Next.js
+            </h4>
+            <h2 class="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              A Complete Solution for<span class="relative inline-block dark:before:bg-titlebgdark">SaaS
+                Startup</span>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id dolorum non qui necessitatibus culpa
+              numquam amet dolorem eius excepturi?.</p>
+            <div class="mt-7.5 flex items-center gap-5">
+              <div
+                class="flex h-20 w-20 items-center justify-center boder-radius-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                <p class="text-metatitle2 font-semibold text-black dark:text-white">01</p>
+              </div>
+              <div class="w-3/4">
+                <h3 class="mb-0.5 text-metatitle2 text-black dark:text-white">Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit.
+                  Transactional Emails</h3>
+                <p>Ut ultricies lacus non fermentum ultrices.</p>
+              </div>
+            </div>
+            <div class="mt-7.5 flex items-center gap-5">
+              <div
+                class="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                <p class="text-metatitle2 font-semibold text-black dark:text-white">02</p>
+              </div>
+              <div class="w-3/4">
+                <h3 class="mb-0.5 text-metatitle2 text-black dark:text-white">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Illo ipsam vel ea.</h3>
+                <p>consectetur adipiscing elit fermentum ultricies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- END Complete -->
 
     <!-- Packed -->
@@ -310,7 +407,11 @@
     <!-- END Packed -->
 
     <!-- Intro -->
-    <section class="Intro"></section>
+    <section class="Intro">
+      <div>
+
+      </div>
+    </section>
     <!-- END Intro -->
 
     <!-- Trust -->
@@ -356,7 +457,21 @@
     <!-- END Trust -->
 
     <!-- Integtaion -->
-    <section class="Integtaion"></section>
+    <section>
+      <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+        <div class="animate_top mx-auto text-center" style="opacity: 1; transform: none;">
+          <div
+            class="mb-4 inline-block rounded-full bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection">
+            <span class="text-sectiontitle font-medium text-black dark:text-white">INTEGRATIONS</span></div>
+          <h2
+            class="mx-auto mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aut.</h2>
+          <p class="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique soluta quia reiciendis quae a dolor perferendis molestiae ab nemo quaerat amet, debitis voluptas officia nam odio doloribus voluptates iste, vel quod sed minima. Ipsa molestias ullam exercitationem veniam nihil 
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
     <!-- END Integtaion -->
 
     <!-- Enjoy -->
