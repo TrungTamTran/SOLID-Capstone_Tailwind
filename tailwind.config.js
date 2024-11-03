@@ -38,6 +38,7 @@ module.exports = {
       margin: {
         "4.5": "1.125rem", // Thiết lập mb-4.5 là 1.125rem 
         '17.5': '4.375rem',
+        '11.5': '2.875rem',
       },
       fontSize: {
         'hero': ['44px', { lineHeight: '58px' }],
@@ -46,6 +47,8 @@ module.exports = {
         'sectiontitle3': ['44px', { ineHeight: '55px',}],
         'para2': ['22px', { ineHeight: '35px', }],
         'sectiontitle4': ['34px', { lineHeight: '48px', }],
+        'sectiontitle2': ['40px', { lineHeight: '52px', }],
+        'metatitle3': ['18px', { lineHeight: '26px', }],
       },
       inset: {
         '11.5': '2.875rem', // Tạo lớp left-11.5 với giá trị 2.875rem
@@ -65,10 +68,18 @@ module.exports = {
       boxShadow: {
         'solid-3': '0 0 3px rgba(0, 0, 0, 0.1)',
         'solid-4': '0px 6px 90px rgba(186, 186, 186, 0.5)', 
+        'solid-8': '0px 12px 120px rgba(45,74,170,.06)'
       },
       inset: {
         '-25': '-6.25rem', // Giá trị tương ứng với -100px
       },
+      borderColor: {
+        stroke: 'rgb(238, 238, 238)', // Thêm lớp border-stroke với màu tùy chỉnh
+        waterloo: 'rgb(117, 118, 147)',
+      },
+      backgroundColor: {
+        blackho: 'rgb(44, 49, 73)',
+      }
     },
   },
   plugins: [
