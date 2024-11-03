@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .text-header {
-    @apply text-gray1 hover:text-blue-700 font-thin1 
+    @apply text-gray1 py-2 px-3 font-thin1 hover:text-blue-700
 }
